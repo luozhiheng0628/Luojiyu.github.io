@@ -51,7 +51,7 @@ document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  input: GFM                            # u se Github Flavored Markdown !important
 
 rdiscount:
   extensions: []
@@ -65,7 +65,7 @@ kramdown:
   entity_output:  as_char
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  enable_coderay: true
 
   coderay:
     coderay_wrap:              div
