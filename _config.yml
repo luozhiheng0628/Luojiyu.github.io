@@ -48,32 +48,9 @@ Markdown settings
 replace redcarpet to kramdown,
 although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
+markdown: Redcarpet
 highlighter: rouge
-kramdown:
-  input: GFM                            # u se Github Flavored Markdown !important
 
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: true
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
 
 # 评论系统
 # Disqus（https://disqus.com/）
