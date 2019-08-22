@@ -3,7 +3,7 @@ title: HOME
 SEOTitle: CSQ&LJY
 header-img: img/post-bg-desk.jpg
 email: 282594445@qq.com
-description: "This is our private space."
+description: "Every failure is leading towards success."
 #keyword: "BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone"
 url: "http://luojiyu.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -11,7 +11,7 @@ github_repo: "https://github.com/luojiyu/luojiyu.github.io.git" # you code repos
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "I offer U the loyalty of a man who has nerver been loyal"
+sidebar-about-description: "I offer U the loyalty of a man who has never been loyal."
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -44,12 +44,15 @@ gems: [jekyll-paginate]
 
 
 
-Markdown settings
-replace redcarpet to kramdown,
-although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: Kramdown
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
 
 
 # 评论系统
@@ -59,12 +62,12 @@ highlighter: rouge
 # Gitalk
 #gitalk:
  # enable: false    #是否开启Gitalk评论
- # clientID: f2c84e7629bb1446c1a4                            #生成的clientID
- # clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  #repo: qiubaiying.github.io    #仓库名称
- # owner: qiubaiying    #github用户名
- # admin: qiubaiying
- # distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  #clientID: f2c84e7629bb1446c1a4                            #生成的clientID
+#  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+ # repo: qiubaiying.github.io    #仓库名称
+  #owner: qiubaiying    #github用户名
+  #admin: qiubaiying
+  #distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
@@ -75,37 +78,38 @@ ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
 ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: sqjy.xyz               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_domain: sqjy.xyz              # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
 
 
 # Featured Tags
-featured-tags: false                     # 是否使用首页标签
+featured-tags: true                     # 是否使用首页标签
 featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
 
 
 # Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
+#chrome-tab-theme-color: "#000000"
+#service-worker: true
 
 
 
 # Friends
 #friends: [
-#    {
-#        title: "WY",
-#        href: "http://zhengwuyang.com"
+ #   {
+  #      title: "WY",
+   #     href: "http://zhengwuyang.com"
+    #},{
+     #   title: "简书·BY",
+      #  href: "http://www.jianshu.com/u/e71990ada2fd"
 #    },{
-#        title: "简书·BY",
- #       href: "http://www.jianshu.com/u/e71990ada2fd"
- #   },{
-#        title: "Apple",
- #       href: "https://apple.com"
-#    },{
-#        title: "Apple Developer",
- #       href: "https://developer.apple.com/"
-  #  }
+ #       title: "Apple",
+  #      href: "https://apple.com"
+   # },{
+    #    title: "Apple Developer",
+     #   href: "https://developer.apple.com/"
+    #}
 #]
+
